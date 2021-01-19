@@ -95,6 +95,7 @@ coin = sprites.create(img`
     . f d d d d f . 
     . . f f f f . . 
     `, SpriteKind.Projectile)
+coin.setPosition(randint(0, 160), randint(0, 120))
 info.setLife(3)
 controller.moveSprite(doggy)
 ghost.follow(doggy, 30)
